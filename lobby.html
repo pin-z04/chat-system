@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>聊天室大廳</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="top">
+    暱稱：
+    <input id="nameInput">
+    <button onclick="createChat()">➕ 新增聊天室</button>
+  </div>
+
+  <div id="chatList" class="chat-list"></div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/lobby.js"></script>
+</body>
+</html>

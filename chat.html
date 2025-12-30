@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>聊天室</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="top">
+    <span id="chatTitle">聊天室</span>
+    <button onclick="editChatName()">編輯名稱</button>
+    <button onclick="inviteUser()">邀請好友</button>
+    <button onclick="leaveChat()">離開聊天室</button>
+    <button onclick="deleteChat()">刪除聊天室</button>
+  </div>
+
+  <div id="members" class="members"></div>
+  <div id="messages" class="messages"></div>
+
+  <div id="input-area">
+    <input id="messageInput" placeholder="輸入訊息..."/>
+    <button id="sendBtn">送出</button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+  <script src="js/firebase.js"></script>
+  <script src="js/chat.js"></script>
+</body>
+</html>
